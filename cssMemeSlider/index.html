@@ -3,8 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>CSS MEME SLIDER</title>
   </head>
-  <body></body>
+  <body>
+    <div class="slider">
+      <div class="slides-wrapper">
+        <div class="slide active">
+          <img src="assets/meme_1.jpg" alt="Slide 1" class="slide-img" />
+        </div>
+        <div class="slide">
+          <img src="assets/meme_2.jpeg" alt="Slide 2" class="slide-img" />
+        </div>
+        <div class="slide">
+          <img src="assets/meme_3.png" alt="Slide 3" class="slide-img" />
+        </div>
+        <div class="slide">
+          <img src="assets/meme_4.png" alt="Slide 3" class="slide-img" />
+        </div>
+      </div>
+      <div class="infoButtons-wrapper">
+        <div class="info">
+          <div class="info-slide">
+            <h2>Text about slide 1</h2>
+          </div>
+          <div class="info-slide">
+            <h2>Text about slide 2</h2>
+          </div>
+          <div class="info-slide">
+            <h2>Text about slide 3</h2>
+          </div>
+          <div class="info-slide">
+            <h2>Text about slide 4</h2>
+          </div>
+        </div>
+        <div class="buttons">
+          <input type="radio" name="radio-btn" id="radio1" checked />
+
+          <input type="radio" name="radio-btn" id="radio2" />
+
+          <input type="radio" name="radio-btn" id="radio3" />
+
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="navigation">
+            <div class="button">
+              <label for="radio1" class="bar"></label>
+            </div>
+            <div class="button">
+              <label for="radio2" class="bar"></label>
+            </div>
+            <div class="button">
+              <label for="radio3" class="bar"></label>
+            </div>
+            <div class="button">
+              <label for="radio4" class="bar"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
