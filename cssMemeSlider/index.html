@@ -3,65 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
     <title>CSS MEME SLIDER</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
   </head>
+
   <body>
-    <div class="slider">
-      <div class="slides-wrapper">
-        <div class="slide active">
-          <img src="assets/meme_1.jpg" alt="Slide 1" class="slide-img" />
-        </div>
-        <div class="slide">
-          <img src="assets/meme_2.jpeg" alt="Slide 2" class="slide-img" />
-        </div>
-        <div class="slide">
-          <img src="assets/meme_3.png" alt="Slide 3" class="slide-img" />
-        </div>
-        <div class="slide">
-          <img src="assets/meme_4.png" alt="Slide 3" class="slide-img" />
-        </div>
-      </div>
-      <div class="infoButtons-wrapper">
-        <div class="info">
-          <div class="info-slide">
-            <h2>Text about slide 1</h2>
-          </div>
-          <div class="info-slide">
-            <h2>Text about slide 2</h2>
-          </div>
-          <div class="info-slide">
-            <h2>Text about slide 3</h2>
-          </div>
-          <div class="info-slide">
-            <h2>Text about slide 4</h2>
-          </div>
-        </div>
-        <div class="buttons">
-          <input type="radio" name="radio-btn" id="radio1" checked />
+    <main>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <input type="radio" name="slider" id="meme1" checked />
+          <input type="radio" name="slider" id="meme2" />
+          <input type="radio" name="slider" id="meme3" />
+          <input type="radio" name="slider" id="meme4" />
 
-          <input type="radio" name="radio-btn" id="radio2" />
-
-          <input type="radio" name="radio-btn" id="radio3" />
-
-          <input type="radio" name="radio-btn" id="radio4" />
-
-          <div class="navigation">
-            <div class="button">
-              <label for="radio1" class="bar"></label>
+          <div class="images-wrapper">
+            <img src="assets/meme_1.jpg" alt="meme1" />
+            <img src="assets/meme_2.jpeg" alt="meme2" />
+            <img src="assets/meme_3.png" alt="meme3" />
+            <img src="assets/meme_4.png" alt="meme4" />
+          </div>
+          <div class="text-buttons--wrapper">
+            <div class="buttons-wrapper">
+              <label for="meme1">
+                <span class="button"></span>
+              </label>
+              <label for="meme2">
+                <span class="button"></span>
+              </label>
+              <label for="meme3">
+                <span class="button"></span>
+              </label>
+              <label for="meme4">
+                <span class="button"></span>
+              </label>
             </div>
-            <div class="button">
-              <label for="radio2" class="bar"></label>
-            </div>
-            <div class="button">
-              <label for="radio3" class="bar"></label>
-            </div>
-            <div class="button">
-              <label for="radio4" class="bar"></label>
+            <div class="text-wrapper">
+              <h2 class="text">Всё нормально,шашлык на подходе</h2>
+              <h2 class="text">
+                К счастью,плохие дни окончены <br />Пришло время дней еще хуже
+              </h2>
+              <h2 class="text">Котик =^-^=</h2>
+              <h2 class="text">-Это просто закат! <br />-Да это же я</h2>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
