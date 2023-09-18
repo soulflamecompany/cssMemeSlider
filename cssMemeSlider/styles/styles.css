@@ -152,3 +152,34 @@ body {
 #meme4:checked ~ .text-buttons--wrapper label:nth-child(4) .button {
   background-color: rgb(252, 207, 6);
 }
+
+@media (max-width: 800px) {
+  .slider-container {
+    max-width: 40em;
+    padding: 1em;
+  }
+  .text-buttons--wrapper {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  body {
+    padding: 1em 2em;
+  }
+
+  .buttons-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .buttons-wrapper {
+    margin: 0;
+  }
+  .text {
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
